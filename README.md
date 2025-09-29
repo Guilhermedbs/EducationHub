@@ -20,9 +20,6 @@ O EducationHub resolve isso criando um espaço único para **recursos, tarefas, 
 - Perfis: Aluno e Professor.  
 - Recursos: Upload de materiais, fóruns, salas virtuais, tarefas, relatórios de desempenho.  
 
-## Visão Geral da Arquitetura
-![Diagrama de Arquitetura](docs/architecture/architecture.png)  
-*(substituir pela imagem final do diagrama)*
 
 ## Tecnologias Propostas
 - **Frontend**: React.js (web), React Native (mobile).  
