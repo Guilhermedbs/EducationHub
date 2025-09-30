@@ -2,33 +2,7 @@
 
 ## Visão rápida
 Simples e direto: um frontend, uma API e o PostgreSQL. Uploads vão pro S3. Um job faz a sincronização com o LMS quando configurado.
-
-```mermaid
-graph TB
-  subgraph Frontend
-    WEB[React Web]
-    MOBILE[React Native]
-  end
-
-  subgraph Backend
-    API[API REST - Node.js]
-    AUTH[JWT]
-    SYNC[Job de Sincronização LMS]
-  end
-
-  subgraph Dados
-    DB[(PostgreSQL)]
-    S3[(Armazenamento de Arquivos)]
-  end
-
-  WEB --> API
-  MOBILE --> API
-  API --> AUTH
-  API --> DB
-  API --> S3
-  SYNC --> API
-  SYNC --> DB
-```
+![Diagrama de Arquitetura](Diagrama.png)
 
 ## Módulos da API
 - Autenticação e Conta: registro, login, recuperação de senha, perfil
