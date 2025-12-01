@@ -15,18 +15,35 @@ O EducationHub resolve isso criando um espaço único para **conteudos, feedback
 - Contribuir para inclusão e qualidade educacional alinhadas ao **ODS 11 – Cidades e Comunidades Sustentáveis**.
 
 ## Escopo
-- **Web App** responsivo + **Mobile App**.  
+- **Web App** responsivo.  
 - Perfis: Aluno e Professor.  
-- Recursos: Upload de materiais, fóruns e feedbacks 
+- Recursos: Upload de materiais, fóruns, mensagens e feedbacks.
 
+## Tecnologias Utilizadas
 
-## Tecnologias Propostas
-- **Frontend**: React.js (web), React Native (mobile).  
-- **Backend**: Node.js + Express / NestJS (microsserviços).  
-- **Banco de Dados**: PostgreSQL.  
-- **Infraestrutura**: AWS (EC2, RDS, S3).  
-- **Prototipação**: Figma.  
-- **Documentação de APIs**: Swagger.  
+| Camada | Tecnologia |
+|--------|------------|
+| **Frontend** | React 18 + TypeScript + Vite |
+| **Estilização** | Tailwind CSS |
+| **Componentes UI** | shadcn/ui + Radix UI |
+| **Backend** | Supabase (BaaS) |
+| **Banco de Dados** | PostgreSQL (via Supabase) |
+| **Formulários** | React Hook Form + Zod |
+| **Estado/Cache** | TanStack Query |
+| **Roteamento** | React Router DOM |
+
+### Estrutura do Projeto
+```
+education-hub-app/
+├── src/
+│   ├── components/    # Componentes reutilizáveis
+│   ├── contexts/      # Contextos React
+│   ├── hooks/         # Custom hooks
+│   ├── integrations/  # Integração com Supabase
+│   ├── lib/           # Utilitários
+│   └── pages/         # Páginas da aplicação
+└── supabase/          # Configurações do banco
+```  
 
 ## Cronograma (Etapa 2 - N708)
 - **Mês 1**: Definição de requisitos, refinamento de arquitetura, protótipos.  
