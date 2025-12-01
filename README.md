@@ -1,6 +1,6 @@
 # EducationHub
 
-**Link do projeto:** [EducationHub](https://education-hub-ten.vercel.app/auth)
+**Link do projeto:** [EducationHub](https://education-hub-ten.vercel.app)
 
 ## Descrição
 O **EducationHub** é uma plataforma de ensino interativa e colaborativa para professores e alunos pré-universitários.  
